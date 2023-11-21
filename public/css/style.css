@@ -1,0 +1,288 @@
+.ALL{
+    background-color: rgb(165, 228, 146);
+    color: antiquewhite;
+
+}
+.WHERE{
+    background-color: rgb(225, 137, 23);
+    color: antiquewhite;
+
+}
+.FIND{
+    background-color: rgb(78, 58, 229);
+    color: antiquewhite;
+
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-container:after{
+    content: "";
+    width: 30%;
+    margin: 2px;
+
+}
+.flex-item{
+    margin: 5px 15px;
+    max-width: 28%;
+    max-height: 28%;
+
+    
+}
+.img-price-container{
+    position: relative;
+    display: block;
+}
+.item-price{
+    position:absolute;
+    bottom: 30px;
+    left: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(184, 155, 155);
+    color: blue;
+
+}
+.item-nissu{
+    position:absolute;
+    bottom:75px;
+    left: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(255, 0, 0);
+    color: blue;
+}
+.item-yousai{
+    position:absolute;
+    bottom: -10px;
+    left: 10px;
+}
+
+.item-img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.main-picture{
+    margin-top: 1px;
+    background-image: url(../images/1-001.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+main{
+    margin-top: 10px;
+}
+.logo{
+    font-size: 1.5rem;
+    color: black;
+}
+.sectionTitle{
+    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(90, 4, 250);
+}
+a{
+    text-decoration: none;
+    color: rgb(21, 239, 14);
+}
+.delcart{
+    background-color: rgb(255, 0, 0);
+    color: #0e0e0e !important;
+}
+
+.text-intro{
+  justify-content: center;
+  margin-left: 100px;
+}
+.intro{
+  justify-content: center;
+}
+/* Áp dụng kiểu cho container chung */
+/* detail page start------------------ */
+.flex-container-detail{
+    margin: 0px 150px 10px 150px;
+    background-color: #edf0f1;
+}
+/* Áp dụng kiểu cho hình ảnh chính */
+.detail-pic-main{
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 350px;
+    width: 550PX;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pic-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Áp dụng kiểu cho phần chứa hình ảnh */
+.flex-item-detail {
+    flex: 1;
+}
+
+
+
+
+/* Áp dụng kiểu cho phần chứa văn bản giới thiệu */
+.text-intro {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Áp dụng kiểu cho tiêu đề */
+.item-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+/* Áp dụng kiểu cho giá và thông tin thuế */
+.item-price-detail {
+    font-size: 1.1em;
+    color: #ff5733; 
+}
+
+.item-tax-detail {
+    font-size: 0.9em;
+    color: #555; 
+}
+
+/* Áp dụng kiểu cho container của các nút */
+.flex-button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Áp dụng kiểu cho nút */
+.buttonouter {
+    background-color: #3498db; 
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.buttoninner {
+    text-decoration: none;
+    color: #0e0e0e; 
+    text-align: center;
+    margin: 0;
+
+}
+
+/* Hover effect cho nút */
+.buttonouter:hover {
+    background-color: #2980b9; /* Màu xanh lam nhạt hơn khi hover */
+}
+
+/* detail page end------------------ */
+
+
+
+.flex-cart-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+.flex-cart-detail1 {
+    margin-left: 50px;
+}
+.flex-cart-detail2 {
+    margin-left: 100px;
+    margin-top: 47px;
+}
+
+
+/*flex-item-detail------------ Áp dụng một số kiểu cho container của bảng */
+.flex-item-detail {
+    display: flex;
+    margin: 25px;
+    width: 100%;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+}
+/* Thiết lập kiểu cho tiêu đề h2 */
+.flex-item-detail h2 {
+    font-size: 1.5em;
+    color: #333; /* Màu chữ đen */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và bảng */
+}
+
+/* Thiết lập kiểu cho bảng */
+.flex-item-detail text-table {
+    display: block;
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 10px;
+}
+
+/* Thiết lập kiểu cho các ô chứa dữ liệu */
+.flex-item-detail td {
+    border: 1px solid #ddd; /* Đường viền ô */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Thiết lập kiểu cho tiêu đề của bảng */
+.table-title-detail {
+    font-weight: bold;
+    background-color: #f2f2f2; /* Màu nền xám nhạt cho tiêu đề */
+}
+
+
+.flex-item-cart-string{
+    /* width: 400px; */
+}
+
+
+
+/* swipwe */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+  }
+  
+
+
+/* payment session */
+.guess-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.guess{
+    width: 50%;
+
+}
+.payment{
+    width: 50%;
+    /* margin-left: 10px; */
+
+
+}
+.payment-inner{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
